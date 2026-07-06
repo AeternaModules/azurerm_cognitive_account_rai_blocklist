@@ -6,12 +6,14 @@ Required:
     - name
 Optional:
     - description
+    - tags
 EOT
 
   type = map(object({
     cognitive_account_id = string
     name                 = string
     description          = optional(string)
+    tags                 = optional(map(string))
   }))
 }
 
